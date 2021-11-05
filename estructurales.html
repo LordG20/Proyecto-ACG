@@ -1,0 +1,179 @@
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Lucero Accostupa Quispe">
+  <title>Estructurales</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" type="text/css" href="estructurales.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style type="text/css">
+    img:hover {
+      -webkit-transform: scale(1.15, 1.15);
+      -webkit-transition-timing-function: ease-out;
+      -webkit-transition-duration: 2 s;
+      -moz-transform: scale(1.15, 1.15);
+
+    }
+  </style>
+  <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="fire-0.62.min.js"></script>
+
+
+  <style>
+    .fire {
+      width: 1499px;
+      height: 150px;
+    }
+  </style>
+
+  <script>
+
+    $(document).ready(function () {
+      $('.fire').fire({
+        speed: 20,
+        maxPow: 9,
+        gravity: 0,
+        flameWidth: 3,
+        flameHeight: 0,
+        plasm: true,
+        fireTransparency: 0,
+        fadingFlameSpeed: 8,
+        mouseEffect: true
+      });
+    });
+
+  </script>
+</head>
+
+<body style="background-color: black;">
+  <nav class="navbar navbar-expand-lg navbar-black bg-black navbar1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">INCENDIOS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="responsabilidades.html">Responsabilidades de las autoridades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="estructurales.html">Incendios estructurales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forestales.html">Incendios forestales</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <ul class="galeria">
+    <li><a href="#img1"><img style="width: 300px ;height:300px" class="img-thumbnail" src="imagenes/img1.jpg"></a></li>
+    <li><a href="#img2"><img style="width: 300px ;height:300px" class="img-thumbnail" src="imagenes/img2.jpg"></a></li>
+    <li><a href="#img3"><img style="width: 300px ;height:300px" class="img-thumbnail" src="imagenes/img3.png"></a></li>
+    <li><a href="#img4"><img style="width: 300px ;height:300px" class="img-thumbnail" src="imagenes/img4.png"></a></li>
+    <li><a href="#img5"><img style="width: 300px ;height:300px" class="img-thumbnail" src="imagenes/img5.png"></a></li>
+    <li><a href="#img6"><img style="width: 300px ;height:300px" class="img-thumbnail" src="imagenes/img6.png"></a></li>
+    <li><a href="#img7"><img style="width: 300px ;height:300px" class="img-thumbnail" src="imagenes/img7.png"></a></li>
+    <li><a href="#img8"><img style="width: 300px ;height:300px" class="img-thumbnail" src="imagenes/img8.png"></a></li>
+  </ul>
+
+  <div class="modal" id="img1">
+    <h3>Casas incendiadas</h3>
+    <div class="imagen">
+      <a href="#img8">&#60;</a>
+      <a href="#img2"><img src="imagenes/img1.jpg"></a>
+      <a href="#img2">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+  <div class="modal" id="img2">
+    <h3>Edificios incendiadas</h3>
+    <div class="imagen">
+      <a href="#img1">&#60;</a>
+      <a href="#img3"><img src="imagenes/img2.jpg"></a>
+      <a href="#img3">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+  <div class="modal" id="img3">
+    <h3>Medidas de prevencion</h3>
+    <div class="imagen">
+      <a href="#img2">&#60;</a>
+      <a href="#img4"><img src="imagenes/img3.png"></a>
+      <a href="#img4">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+  <div class="modal" id="img4">
+    <h3>Usar un extintor de incendios</h3>
+    <div class="imagen">
+      <a href="#img3">&#60;</a>
+      <a href="#img5"><img src="imagenes/img4.png"></a>
+      <a href="#img5">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+  <div class="modal" id="img5">
+    <h3>Utilizar las escaleras</h3>
+    <div class="imagen">
+      <a href="#img4">&#60;</a>
+      <a href="#img6"><img src="imagenes/img5.png"></a>
+      <a href="#img6">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+  <div class="modal" id="img6">
+    <h3>Llamar a los bomberos</h3>
+    <div class="imagen">
+      <a href="#img5">&#60;</a>
+      <a href="#img7"><img src="imagenes/img6.png"></a>
+      <a href="#img7">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+  <div class="modal" id="img7">
+    <h3>Evite entrar al area de siniestro hasta que las autoridades lo determinen</h3>
+    <div class="imagen">
+      <a href="#img6">&#60;</a>
+      <a href="#img8"><img src="imagenes/img7.png"></a>
+      <a href="#img8">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+  <div class="modal" id="img8">
+    <h3>Deseche alimentos que hayan sido expuestas al fuego</h3>
+    <div class="imagen">
+      <a href="#img7">&#60;</a>
+      <a href="#img1"><img src="imagenes/img8.png"></a>
+      <a href="#img1">></a>
+    </div>
+    <a class="cerrar" href="">X</a>
+  </div>
+
+  <div class="fire"></div>
+</body>
+
+</html>

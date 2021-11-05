@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Mountains+of+Christmas:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-portada {
+    background-image: url(https://i.gifer.com/PJvy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+.container-texto {
+    height: 20%;
+    width: 800px;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+}
+
+/*prueba */
+.container-fluid {
+    flex-direction: column;
+}
+
+.navbar-collapse {
+    width: 100%;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar-brand {
+    margin: 0;
+    color: rgb(256, 256, 256) !important;
+    font-family: "fantasy";
+    font-size: 25px;
+}
+
+.navbar-brand:hover {
+    color: #268479 !important;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.navbar1 {
+    z-index: 20 !important;
+    background-color: rgba(0, 0, 0) !important;
+}
+
+.navbar2 {
+    text-align: center;
+    position: absolute;
+    z-index: 15 !important;
+    background-color: rgba(0, 0, 0)!important;
+    display: none;
+}
+
+.nav-link {
+    color: rgb(256, 256, 256) !important;
+    font-family: "fantasy" !important;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #268479 !important;
+}
+
+@media (max-width: 990px) {
+    .navbar2 {
+        display: none !important;
+    }
+    .navbar1 {
+        background-color: rgb(97, 161, 163, 0.9) !important;
+    }
+}
+/*FIN */
+
+.texto {
+    color: rgba(150, 240, 54, 0.8);
+    font-family: 'Kalam', 'cursive';
+    font-size: 60px;
+}
+
+.description-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.description-bg {
+    color: white;
+    width: 80%;
+    min-height: 400px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description-text {
+    background-color: transparent;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    text-align: justify;
+}
+
+.description-img {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-text-title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.descripcion-text-p p {
+    text-align: justify;
+    font-size: 20px !important;
+}
+
+.description-flex {
+    width: 70%;
+    height: 90%;
+    max-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://f.rpp-noticias.io/2020/01/23/vid-20200123-wa0003-890850mp4_890851.png);
+    border: 1px black solid;
+    transition: all 500ms ease;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50)
+}
+
+.description-flex:hover {
+    transform: scale(1.2)
+}
+
+.description-container {
+    --s: 25vmin;
+    --p: calc(var(--s) / 2);
+    --c1: #f00;
+    --c2: #ff0;
+    --c3: #BFBFBF;
+    --bg: #f00;
+    --d: 4000ms;
+    --e: cubic-bezier(0.76, 0, 0.24, 1);
+    background-color: var(--bg);
+    background-image: linear-gradient(45deg, var(--c1) 25%, transparent 25%), linear-gradient(-45deg, var(--c1) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--c2) 75%), linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+    background-size: var(--s) var(--s);
+    background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1), calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
+    animation: color var(--d) var(--e) infinite, position var(--d) var(--e) infinite;
+}
+
+@keyframes color {
+    0%,
+    25% {
+        --bg: var(--c3);
+    }
+    26%,
+    50% {
+        --bg: var(--c1);
+    }
+    51%,
+    75% {
+        --bg: var(--c3);
+    }
+    76%,
+    100% {
+        --bg: var(--c2);
+    }
+}
+
+@keyframes position {
+    0% {
+        background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1), calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
+    }
+    25% {
+        background-position: calc(var(--p) * 1) calc(var(--p) * 4), calc(var(--p) * -1) calc(var(--p) * 5), calc(var(--p) * 1) calc(var(--p) * 3), calc(var(--p) * -1) calc(var(--p) * 4);
+    }
+    50% {
+        background-position: calc(var(--p) * 3) calc(var(--p) * 8), calc(var(--p) * -3) calc(var(--p) * 9), calc(var(--p) * 2) calc(var(--p) * 7), calc(var(--p) * -2) calc(var(--p) * 8);
+    }
+    75% {
+        background-position: calc(var(--p) * 3) calc(var(--p) * 12), calc(var(--p) * -3) calc(var(--p) * 13), calc(var(--p) * 2) calc(var(--p) * 11), calc(var(--p) * -2) calc(var(--p) * 12);
+    }
+    100% {
+        background-position: calc(var(--p) * 5) calc(var(--p) * 16), calc(var(--p) * -5) calc(var(--p) * 17), calc(var(--p) * 5) calc(var(--p) * 15), calc(var(--p) * -5) calc(var(--p) * 16);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    body {
+        animation: none;
+    }
+}
+
+.description-container2 {
+    height: 860px;
+    width: 100%;
+    background-color: rgb(138, 134, 134);
+}
+
+.description-container2-body {
+    text-align: center;
+}
+
+.description-container2-body span {
+    display: block;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    padding-top: 20px;
+    font-family: 'Mountains of Christmas', 'cursive';
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.description-container2-body iframe {
+    border-radius: 20px;
+    width: 1300px;
+    height: 750px;
+}
+
+@media(max-width: 1350px) {
+    .description-container2-body iframe {
+        max-width: 85%;
+        height: 55vh;
+    }
+    .description-container2 {
+        height: 65vh;
+    }
+}
+
+@media(max-width: 1000px) {
+    .container-texto {
+        right: 0px;
+        max-width: 60%;
+    }
+    .texto {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 500px) {
+    .description-container2-body iframe {
+        width: 40% !important;
+        height: 20% !important;
+    }
+    .description-container2 {
+        height: 300px;
+    }
+}
+
+@media(max-width: 800px) {
+    .description-bg {
+        flex-wrap: wrap;
+        height: 800px;
+    }
+    .description-flex {
+        width: 100%;
+    }
+    .description-img {
+        width: 70%;
+        transition: all 500ms;
+    }
+    .description-img:hover {
+        transform: translateX(25%);
+    }
+}
